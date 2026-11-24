@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="EV_power — Electric Vehicle Platform & Autonomous Driving Research Project">
+<title>EV_power | Electric Mobility, Engineered</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header class="topbar">
+  <a class="brand" href="#home"><img src="assets/ev-power-logo.jpeg" alt="EV_power logo"><span>EV<span class="blue">_power</span></span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+  <nav id="nav">
+    <a href="#overview">Overview</a><a href="#vehicle">EV Platform</a><a href="#autonomy">Autonomy</a>
+    <a href="#engineering">Engineering</a><a href="#testing">Testing</a><a href="#future">Future</a>
+  </nav>
+  <a class="nav-cta" href="#project">Explore Project ↗</a>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-grid"></div><div class="hero-copy">
+    <div class="eyebrow"><span class="pulse"></span> GRADUATION ENGINEERING PROJECT</div>
+    <h1>Electric mobility.<br><span class="outline">Intelligent</span> motion.</h1>
+    <p class="hero-lead">A practical electric vehicle platform paired with a safe, scalable autonomous-driving development kit.</p>
+    <div class="hero-actions"><a class="button primary" href="#overview">Discover the project <span>↘</span></a><a class="button ghost" href="#vehicle">Explore the vehicle</a></div>
+    <div class="hero-stats"><div><strong>48<span>V</span></strong><small>Power platform</small></div><div><strong>1.2<span>kW</span></strong><small>BLDC drive</small></div><div><strong>2<span>systems</span></strong><small>Hybrid project scope</small></div></div>
+  </div>
+  <div class="hero-visual"><div class="halo"></div><img src="assets/ev-power-car-main.jpeg" alt="EV_power red electric vehicle concept" class="hero-car"><div class="floating-tag"><span class="tag-dot"></span><div><b>EV_power</b><small>Designed for the next drive</small></div></div><span class="hero-index">01 / ELECTRIC MOBILITY</span></div>
+  <div class="scroll-note">SCROLL TO EXPLORE <span>↓</span></div>
+</section>
+
+<section class="intro section" id="overview">
+  <div class="section-label">01 / PROJECT OVERVIEW</div>
+  <div class="intro-layout"><h2>Two engineering challenges.<br><span>One connected vision.</span></h2>
+    <div class="intro-text"><p>EV_power brings together sustainable electric propulsion and intelligent autonomous mobility. The project integrates a full-scale electric vehicle platform with a compact autonomous kit used to validate navigation software in a controlled environment.</p><p class="muted">The approach separates vehicle powertrain validation from early autonomous algorithm testing—reducing development cost and risk while creating a foundation for future integration.</p></div>
+  </div>
+  <div class="feature-row"><article><span class="feature-number">A</span><h3>Clean propulsion</h3><p>Electric drive, energy storage and mechanical power distribution.</p></article><article><span class="feature-number">B</span><h3>Safe autonomy</h3><p>Mapping, localization and obstacle avoidance on a small-scale kit.</p></article><article><span class="feature-number">C</span><h3>Engineering validation</h3><p>Component integration, empirical checks and documented results.</p></article></div>
+</section>
+
+<section class="vehicle section" id="vehicle">
+  <div class="section-label">02 / FULL-SCALE EV PLATFORM</div>
+  <div class="section-heading"><h2>Built around<br><span>electric power.</span></h2><p>The vehicle platform focuses on practical integration of commercially available components, drivetrain stability and mechanical evaluation under load.</p></div>
+  <div class="vehicle-image"><img src="assets/ev-power-car-wide.jpeg" alt="EV_power vehicle side profile"><div class="image-caption"><span>EV_power / VEHICLE CONCEPT</span><span>EXTERIOR DESIGN</span></div></div>
+  <div class="spec-grid">
+    <div class="spec"><small>TRACTION MOTOR</small><strong>1200 <em>W</em></strong><p>48V Brushless DC (BLDC)</p></div>
+    <div class="spec"><small>BATTERY PACK</small><strong>100 <em>Ah</em></strong><p>48V energy storage</p></div>
+    <div class="spec"><small>POWERTRAIN</small><strong>BLDC</strong><p>Controller + mechanical differential</p></div>
+    <div class="spec"><small>VEHICLE MASS</small><strong>325 <em>kg</em></strong><p>Measured curb weight</p></div>
+  </div>
+  <div class="technical-cards">
+    <article><div class="card-icon">01</div><h3>Electric drive</h3><p>A 48V, 1200W BLDC motor is connected to a matching motor controller and mechanical differential to deliver propulsion and distribute power.</p></article>
+    <article><div class="card-icon">02</div><h3>Energy storage</h3><p>The 48V 100Ah battery pack supplies the powertrain. The system is wired and verified with attention to electrical loading and safe isolation.</p></article>
+    <article><div class="card-icon">03</div><h3>Chassis & suspension</h3><p>The selected chassis model was evaluated and adapted. Suspension components were installed and examined under the vehicle's real load.</p></article>
+  </div>
+</section>
+
+<section class="autonomy section" id="autonomy">
+ <div class="section-label">03 / AUTONOMOUS DEVELOPMENT KIT</div>
+ <div class="autonomy-layout"><div><h2>Intelligence<br>at a <span>smaller scale.</span></h2><p class="section-desc">A compact proof-of-concept kit provides a laboratory-grade environment for developing and verifying autonomous navigation before attempting full-scale deployment.</p>
+ <div class="architecture"><div class="arch-node"><span>01</span><b>Perception</b><small>OKdo LiDAR HAT</small></div><div class="arch-arrow">→</div><div class="arch-node"><span>02</span><b>Computing</b><small>Raspberry Pi 5</small></div><div class="arch-arrow">→</div><div class="arch-node"><span>03</span><b>Actuation</b><small>Arduino</small></div></div></div>
+ <div class="autonomy-photo"><img src="assets/ev-power-car-detail.jpeg" alt="EV_power vehicle design detail"><div class="photo-overlay"><span>RESEARCH KIT</span><b>Perceive · Map · Navigate</b></div></div>
+ </div>
+ <div class="autonomy-points"><article><h3>SLAM</h3><p>Simultaneous Localization and Mapping builds a map while estimating the kit's position.</p></article><article><h3>Obstacle avoidance</h3><p>LiDAR distance data supports environmental awareness and safer path decisions.</p></article><article><h3>Real-time control</h3><p>Navigation commands are passed to the Arduino for low-level steering and motor control.</p></article></div>
+</section>
+
+<section class="engineering section" id="engineering">
+ <div class="section-label">04 / ENGINEERING & SYSTEMS</div><div class="section-heading"><h2>Every system<br><span>has a purpose.</span></h2><p>Mechanical, electrical and embedded systems are organized into clear functional layers.</p></div>
+ <div class="system-list">
+  <article><span>01</span><div><h3>Mechanical structure</h3><p>Chassis selection and CAD evaluation · structural modifications · linkage and steering-knuckle assemblies · suspension mounting · manufacturing assembly layout.</p></div><b>MECHANICAL</b></article>
+  <article><span>02</span><div><h3>Suspension & dynamics</h3><p>Spring stiffness evaluation · ride-height comparison · load response · chassis stability · ride comfort and wheel contact.</p></div><b>VEHICLE DYNAMICS</b></article>
+  <article><span>03</span><div><h3>Electrical powertrain</h3><p>48V battery pack · 1200W BLDC motor · motor controller · differential drive · auxiliary 12V signaling circuits · isolation verification.</p></div><b>POWER & CONTROL</b></article>
+  <article><span>04</span><div><h3>Autonomous hardware</h3><p>Raspberry Pi 5 high-level computer · OKdo LiDAR HAT · Arduino Mega / microcontroller · sensor interfaces and serial communication.</p></div><b>EMBEDDED</b></article>
+ </div>
+ <div class="workflow"><div class="section-label">PROJECT WORKFLOW</div><div class="workflow-steps"><div><i>01</i><b>Requirements</b><small>Power & load calculations</small></div><div><i>02</i><b>Integration</b><small>Mechanical installation</small></div><div><i>03</i><b>Verification</b><small>Electrical & safety checks</small></div><div><i>04</i><b>Autonomy</b><small>Sensor & software setup</small></div><div><i>05</i><b>Validation</b><small>Testing & documentation</small></div></div></div>
+</section>
+
+<section class="testing section" id="testing">
+ <div class="section-label">05 / EMPIRICAL TESTING</div><div class="section-heading"><h2>Measured.<br><span>Evaluated.</span></h2><p>Project documentation records physical vehicle boundaries and suspension displacement used in the engineering evaluation.</p></div>
+ <div class="test-layout"><div class="measurements"><div class="measurement"><span>Vehicle curb weight</span><b>325 <small>kg</small></b></div><div class="measurement"><span>Gross vehicle weight</span><b>500 <small>kg</small></b></div><div class="measurement"><span>Overall length</span><b>2.00 <small>m</small></b></div><div class="measurement"><span>Overall width</span><b>1.10 <small>m</small></b></div><div class="measurement"><span>Wheelbase</span><b>1.36 <small>m</small></b></div><div class="measurement"><span>Wheel track</span><b>1.00 <small>m</small></b></div><div class="measurement"><span>Ride height unloaded</span><b>25 <small>cm</small></b></div><div class="measurement"><span>Ride height loaded</span><b>20 <small>cm</small></b></div><div class="measurement highlight"><span>Suspension displacement</span><b>5 <small>cm</small></b></div></div>
+ <div class="test-notes"><h3>Validation domains</h3><ul><li>Vehicle smoothness and powertrain operation</li><li>Suspension resilience and load response</li><li>Battery and electrical system stability</li><li>Autonomous mapping accuracy</li><li>Obstacle avoidance performance</li></ul><div class="note-box"><b>Engineering note</b><p>Values shown here are transcribed from the project book. Additional measured test results can be added when final datasets are available.</p></div></div></div>
+</section>
+
+<section class="future section" id="future">
+ <div class="section-label">06 / FUTURE DEVELOPMENT</div><div class="future-head"><h2>The next chapter<br><span>of EV_power.</span></h2><p>Roadmap concepts described in the project documentation.</p></div>
+ <div class="future-grid"><article><small>01 / VEHICLE</small><h3>Electric Power Steering</h3><p>Explore EPS using high-torque servo or stepper actuation for more precise steering control.</p></article><article><small>02 / SAFETY</small><h3>Electronic braking</h3><p>Investigate EBS integration with ABS for controlled deceleration.</p></article><article><small>03 / COMPUTING</small><h3>Advanced processing</h3><p>Consider an automotive-grade VCU/PLC and higher-performance AI computing.</p></article><article><small>04 / SENSING</small><h3>3D perception</h3><p>Upgrade toward 3D LiDAR, stereo vision, RTK-GPS and sensor fusion.</p></article><article><small>05 / ENERGY</small><h3>Charging & capacity</h3><p>Develop automated onboard charging and evaluate expanded battery capacity.</p></article><article><small>06 / CONNECTIVITY</small><h3>IoT monitoring</h3><p>Explore remote system monitoring and performance data collection.</p></article></div>
+</section>
+
+<section class="project section" id="project"><div class="project-banner"><div><div class="section-label">EV_POWER / GRADUATION PROJECT</div><h2>Engineering a cleaner<br><span>way forward.</span></h2><p>Electric propulsion and autonomous research—designed to work together.</p></div><img src="assets/ev-power-logo.jpeg" alt="EV_power brand logo"></div>
+ <div class="credits"><span>PROJECT TEAM</span><p>Team members and academic supervisors — add the confirmed names here.</p><span>DOCUMENTATION</span><p>Project book · Engineering methodology · Testing & results</p></div>
+</section>
+</main>
+<footer><a class="brand footer-brand" href="#home"><img src="assets/ev-power-logo.jpeg" alt=""><span>EV<span class="blue">_power</span></span></a><p>Electric mobility, engineered with purpose.</p><a href="#home">BACK TO TOP ↑</a><small>© <span id="year"></span> EV_power Graduation Project</small></footer>
+<script src="script.js"></script>
+</body></html>
